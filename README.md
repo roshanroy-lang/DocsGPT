@@ -134,7 +134,7 @@ Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for information abou
 
 - **Application** - Backend Flask application.
 
-- **Extensions** - Integrations and widgets (e.g., React widget, Discord bot).
+- **Extensions** - Integrations and widgets (e.g., Chatwoot, React widget).
 
 - **Frontend** - Web UI built with [Vite](https://vitejs.dev/) and [React](https://react.dev/).
 
