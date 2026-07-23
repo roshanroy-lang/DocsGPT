@@ -1,5 +1,6 @@
 import base64
 import json
+import logging
 import os
 
 from cryptography.hazmat.backends import default_backend
@@ -7,8 +8,9 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.ciphers import algorithms, Cipher, modes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
-from application.core.logging import logger
 from application.core.settings import settings
+
+logger = logging.getLogger(__name__)
 
 
 def _derive_key(user_id: str, salt: bytes) -> bytes:
